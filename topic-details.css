@@ -1,0 +1,143 @@
+/* ===== Global Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffaf7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== Navbar ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background-color: #fde2d6;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #b3541e;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+nav a.active, nav a:hover {
+    color: #b3541e;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    text-align: center;
+    padding: 80px 20px 50px;
+    background: linear-gradient(to right, #ffe1d9, #fff4f0);
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #b3541e;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #555;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ===== Content Section ===== */
+.content {
+    padding: 60px 80px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content-section {
+    margin-bottom: 50px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px 35px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.content-section:hover {
+    transform: translateY(-4px);
+}
+
+.content-section h2 {
+    color: #b3541e;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 15px;
+}
+
+.content-section img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+/* List Styles */
+ul {
+    margin-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background-color: #b3541e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #8a3f17;
+}
+
+/* Footer */
+footer {
+    background-color: #b3541e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content {
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}

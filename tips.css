@@ -1,0 +1,207 @@
+/* ===== Global Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffaf7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== Navbar ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background-color: #fde2d6;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #b3541e;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+nav a.active, nav a:hover {
+    color: #b3541e;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    background: linear-gradient(to right, #ffe1d9, #fff4f0);
+    text-align: center;
+    padding: 100px 20px 60px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #b3541e;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ===== Tips Section ===== */
+.tips-section {
+    padding: 60px 80px;
+    text-align: center;
+}
+
+.tips-section h2 {
+    font-family: 'Playfair Display', serif;
+    color: #b3541e;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.tip-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+}
+
+.tip-card h3 {
+    color: #b3541e;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* ===== Video Tutorials ===== */
+.videos-section {
+    background-color: #fff4f0;
+    padding: 60px 80px;
+    text-align: center;
+}
+
+.videos-section h2 {
+    font-family: 'Playfair Display', serif;
+    color: #b3541e;
+    margin-bottom: 40px;
+}
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.video-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.video-card h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+/* ===== Materials Section ===== */
+.materials-section {
+    padding: 60px 80px;
+    text-align: center;
+}
+
+.materials-section h2 {
+    font-family: 'Playfair Display', serif;
+    color: #b3541e;
+    margin-bottom: 40px;
+}
+
+.materials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.material-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.material-card:hover {
+    transform: translateY(-5px);
+}
+
+.material-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.material-card h3 {
+    margin-top: 15px;
+    color: #b3541e;
+    font-family: 'Playfair Display', serif;
+}
+
+.material-card p {
+    padding: 0 20px 20px;
+    color: #555;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #b3541e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tips-section, .videos-section, .materials-section {
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}

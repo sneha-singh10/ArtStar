@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | ArtStar</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="logo"><img height="15px" width="15px" src="images/logo.png" alt=""> ArtStar</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="topics.html">Topics</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Get in Touch</h1>
+        <p>We’d love to hear from you! Share your feedback, questions, or artwork ideas.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-container">
+        <div class="contact-form">
+            <h2>Send a Message</h2>
+            <form action="https://formspree.io/f/xpwkadnp" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="_replyto" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h2>Connect With Us</h2>
+            <p><strong>Email:</strong> createwithartstar@gmail.com</p>
+            <p><strong>Instagram:</strong> @create_with_artstar</p>
+            <p><strong>Location:</strong> NIT Durgapur, India</p>
+
+            <div class="illustration">
+                <img src="images/email.png" alt="Contact Illustration">
+            </div>
+        </div>
+    </section>
+        <!-- Success Popup -->
+    <div id="successPopup" class="popup">
+        <div class="popup-content">
+            <h2>🎨 Message Sent!</h2>
+            <p>Thank you for reaching out. We’ll get back to you soon!</p>
+            <button id="closePopup" class="popup-btn">Close</button>
+        </div>
+    </div>
+
+    <!-- Link JS File -->
+    <script src="js/contact.js"></script>
+</body>
+</html>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 ArtStar| Designed by Sneha Singh</p>
+    </footer>
+</body>
+</html>

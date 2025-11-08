@@ -1,0 +1,248 @@
+/* ===== Global Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffaf7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== Navbar ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background-color: #fde2d6;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #b3541e;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+nav a.active, nav a:hover {
+    color: #b3541e;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    background: linear-gradient(to right, #ffe1d9, #fff4f0);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.hero h1 span {
+    color: #b3541e;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    background-color: #b3541e;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #8a3f17;
+}
+
+.btn.secondary {
+    background-color: #ffb395;
+}
+
+.btn.secondary:hover {
+    background-color: #ff946c;
+}
+
+/* ===== Why Learn Painting ===== */
+.why-learn {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.why-learn h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.reasons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.reason-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    width: 280px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.reason-card:hover {
+    transform: translateY(-5px);
+}
+
+.reason-card img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+/* ===== Topics Preview ===== */
+.topics-preview {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fff4f0;
+}
+
+.topics-preview h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 40px;
+}
+
+.topic-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.topic-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 260px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.topic-card:hover {
+    transform: scale(1.05);
+}
+
+.topic-card img {
+    padding-top: 10px;
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+}
+
+.topic-card h3 {
+    padding: 15px;
+    color: #b3541e;
+    font-size: 1.1rem;
+}
+
+/* ===== Quote Section ===== */
+.quote {
+    background-color: #fde2d6;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: #333;
+}
+
+.quote blockquote {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.quote span {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #b3541e;
+}
+
+/* ===== Footer with Social Links ===== */
+footer {
+    background-color: #b3541e;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.4rem;
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffb395; /* soft peach highlight */
+    transform: scale(1.1);
+}
+
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .reasons, .topic-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
